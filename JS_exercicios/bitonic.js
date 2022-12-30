@@ -1,3 +1,6 @@
+// EXERCICIO PROPOSTO: CRIAR UM CODIGO PARA ORGANIZAR UMA LISTA
+// BASEADO NO ALGORITIMO DE ORDENAÇÃO "BITONIC ORDER"
+
 function bitonic(lista){   
 
     var array = lista
