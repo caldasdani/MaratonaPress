@@ -6,9 +6,18 @@ function bitonic(lista){
     var array = lista
     var novoArray = []
     var corte = array.length/2;
+    var x = lista.length;
     
+    function potencia(x){
+        while(x>=2){
+            x = x/2;
+        }
+        if (x==1){
+            return true
+        }
+    }    
 
-    if ([1,2,4,8,16,32,64,128,256,512,1024,2048].includes(array.length)){
+    if (potencia(x) == true){
         for(let i=0 ; i<corte ; i++){
             novoArray.push(array.pop());
         }
@@ -21,7 +30,7 @@ function bitonic(lista){
     }
     else{
         console.error("erro")
-    }    
+    }   
 }
 
 bitonic([22, 15, 3, 45, 54, 68, 1, 12]);
